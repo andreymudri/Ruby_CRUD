@@ -2,7 +2,7 @@
 
 Just a simple CRUD in Ruby on Rails
 
-## Prerequisites
+### Prerequisites
 
 - Ruby
 - Rails
@@ -33,7 +33,7 @@ http://127.0.0.1:3000/posts
 
 ## Docker
 
-## Prerequisites
+### Prerequisites
 
 Ensure you have the following prerequisites installed before using this project:
 
@@ -63,3 +63,28 @@ docker-compose down
 docker-compose logs
 
 ```
+
+
+## Gems Utilizadas
+
+devise: Esta gem é usada para autenticação de usuários. Ela fornece uma solução completa para autenticação de usuários, incluindo registro, login, logout e recuperação de senha.
+
+puma: Puma é um servidor de aplicação Ruby on Rails. Ele é usado para hospedar nossa aplicação.
+
+sass-rails: Esta gem é usada para estilização. Ela permite que escrevamos nossos estilos em SCSS, que é uma sintaxe mais poderosa e flexível para CSS.
+
+webpacker: Webpacker facilita o uso do Webpack para gerenciar nossos assets JavaScript. Ele permite que escrevamos nosso código JavaScript de uma maneira mais modular e organizada.
+
+turbolinks: Turbolinks acelera a navegação em nossa aplicação web. Ele faz isso substituindo a página inteira com uma nova do servidor sempre que um link é clicado.
+
+jbuilder: Jbuilder é usado para construir JSON APIs. Ele nos permite criar views JSON de uma maneira muito Ruby-on-Rails-y.
+
+bootsnap: Bootsnap acelera o tempo de inicialização do nosso aplicativo. Ele faz isso através do cache de várias operações caras que são realizadas durante a inicialização do aplicativo.
+
+byebug: Byebug é usado para depuração. Ele nos permite parar a execução do código em qualquer lugar e obter um console de depuração.
+
+web-console: Web Console é usado para acessar um console interativo em páginas de exceção ou chamando 'console' em qualquer lugar do código.
+
+listen: Listen é usado em desenvolvimento para recarregar automaticamente o aplicativo sempre que um arquivo é modificado.
+
+spring: Spring acelera o desenvolvimento mantendo nosso aplicativo rodando em segundo plano.
