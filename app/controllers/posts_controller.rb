@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
   # GET /posts
   def index
     @posts = Post.all
@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
+    @post = Post.find(params[:id]) # find post by id
   end
 
   # GET /posts/new
@@ -28,12 +29,13 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @post = Post.find(params[:id])
   end
 
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
-      redirect_to @post, notice: 'Post was successfully updated.'
+      redirect_to posts_path, notice: 'Post was successfully updated.'
     else
       render :edit
     end

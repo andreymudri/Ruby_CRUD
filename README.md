@@ -5,7 +5,7 @@ Just a simple CRUD in Ruby on Rails
 ## Prerequisites
 
 - Ruby
-- Rails 
+- Rails
 - Database(SQLite)
 
 ## Installation
@@ -20,16 +20,46 @@ Just a simple CRUD in Ruby on Rails
 1. Start the server: `rails server`
 2. Open your browser and navigate to `http://localhost:3000`
 
-## Running Tests
+## Routes
 
-If your project has tests, provide instructions on how to run them. For example, if you're using RSpec:
+Login
+http://127.0.0.1:3000/users/sign_in
 
-1. Run the tests: `bundle exec rspec`
+Logout
+http://127.0.0.1:3000/users/sign_out
 
-## Contributing
+Posts
+http://127.0.0.1:3000/posts
 
-If applicable, instructions on how to contribute to your project.
+## Docker
 
-## License
+## Prerequisites
 
-If applicable, information about the project's license.
+Ensure you have the following prerequisites installed before using this project:
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+1. Build and Start the Containers:
+
+```bash
+
+docker-compose up -d --build
+
+```
+
+2.Stop the Containers:
+
+```bash
+
+docker-compose down
+
+```
+
+3. View logs:
+
+```bash
+
+docker-compose logs
+
+```
