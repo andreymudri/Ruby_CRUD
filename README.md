@@ -10,8 +10,8 @@ Just a simple CRUD in Ruby on Rails
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/username/project.git`
-2. Navigate to the project directory: `cd project`
+1. Clone the repository: `git clone https://github.com/andreymudri/Ruby_CRUD.git`
+2. Navigate to the project directory: `cd Ruby_CRUD`
 3. Install dependencies: `bundle install`
 4. Setup the database: `rails db:create db:migrate`
 
